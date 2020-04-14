@@ -6,9 +6,9 @@ require('dotenv').config();
 
 const app = express();
 
-//listening on port 2000
-app.listen(2000, () => {
-    console.log("Listening at 2000")
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+    console.log("Listening at " + port);
 });
 
 //hosting the public directory

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Weather here</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1>Weather here</h1>
+    <div><a href="/">Checkins</a> | <a href="/logs">View Checkins</a></div>
+    <p> Hello there - Your location is </p>
+    <p>
+        Latitude : <span id="lat"></span>°<br/> Longitude : <span id="long"></span>°
+    </p>
+    <p>
+        The Weather here is <span id="summary"></span> with a temperature of <span id="temperature"></span> degree. The Air quality if available is
+        <span id="airquality"></span><span id='aq_units'></span> last updated on <span id='last_updated'></span>
+    </p>
+    <button type="button" id="sendData">Checkin Here</button>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

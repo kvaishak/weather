@@ -16,3 +16,5 @@ Playing around with Node.js and NPM packages for server side web application dev
 
 ### Usage
 * Clone the repository and the run the following
+* Rename the `.sample_env` file as `.env` and then add your api key for open weather map and then run using node
+```node index.js```

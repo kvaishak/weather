@@ -15,6 +15,6 @@ Playing around with Node.js and NPM packages for server side web application dev
 * Openaq for getting the airquality data
 
 ### Usage
-* Clone the repository and the run the following
+* Clone the repository.
 * Rename the `.sample_env` file as `.env` and then add your api key for open weather map and then run using node
 ```node index.js```

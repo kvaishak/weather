@@ -19,7 +19,7 @@ const database = new Datastore('database.db');
 database.loadDatabase();
 
 //creating an end point for the client to post the data
-app.use(express.json({ limit: '1mb' })); //for making the response to parse as JSON
+app.use(express.json({ limit: '1mb' })); //for making the request to the server to be parsed as JSON
 app.post('/api', (request, response) => {
     const data = request.body;
     const timestamp = Date.now();

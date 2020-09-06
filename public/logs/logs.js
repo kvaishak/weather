@@ -23,7 +23,7 @@ async function getData() {
         let weatherTxt = `The Weather here was ${item.weather.weather[0].description} with a temperature of ${item.weather.main.temp} degree. `
 
         if (item.airData && item.airData.value > 0) {
-            weatherTxt += `The Air quality is
+            weatherTxt += `The Air quality was
             ${item.airData.value} ${item.airData.unit} last updated on ${item.airData.lastUpdated.substring(0,10)}`;
         } else {
               //no weather Data

@@ -20,14 +20,14 @@ async function getData() {
         //adding marker to the map
         const marker = L.marker([item.lat, item.long]).addTo(mymap);
 
-        let weatherTxt = `The Weather here is ${item.weather.weather[0].description} with a temperature of ${item.weather.main.temp} degree. `
+        let weatherTxt = `The Weather here was ${item.weather.weather[0].description} with a temperature of ${item.weather.main.temp} degree. `
 
-        if (item.airData.value < 0) {
+        if (item.airData && item.airData.value < 0) {
             //no weather Data
             weatherTxt += "No Air quality Information"
         } else {
             weatherTxt += `The Air quality is
-            ${item.airData.value} ${item.airData.unit}last updated on ${item.airData.lastUpdated}`;
+            ${item.airData.value} ${item.airData.unit} last updated on ${item.airData.lastUpdated}`;
         }
 
         marker.bindPopup(weatherTxt);

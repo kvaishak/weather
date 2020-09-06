@@ -28,7 +28,7 @@ if ('geolocation' in navigator) {
         if(airData){
             document.getElementById("airquality").textContent = airData.value;
             document.getElementById("aq_units").textContent = airData.unit ? airData.unit : "";
-            document.getElementById("last_updated").textContent = airData.lastUpdated ? airData.lastUpdated : "Never";
+            document.getElementById("last_updated").textContent = airData.lastUpdated ? airData.lastUpdated.substring(0,10) : "Never";
             document.getElementById("pair").classList.add("onresp");
         }
         

@@ -22,12 +22,12 @@ async function getData() {
 
         let weatherTxt = `The Weather here was ${item.weather.weather[0].description} with a temperature of ${item.weather.main.temp} degree. `
 
-        if (item.airData && item.airData.value < 0) {
-            //no weather Data
-            weatherTxt += "No Air quality Information"
-        } else {
+        if (item.airData && item.airData.value > 0) {
             weatherTxt += `The Air quality is
             ${item.airData.value} ${item.airData.unit} last updated on ${item.airData.lastUpdated}`;
+        } else {
+              //no weather Data
+              weatherTxt += "No Air quality Information"
         }
 
         marker.bindPopup(weatherTxt);

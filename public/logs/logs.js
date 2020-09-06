@@ -1,4 +1,4 @@
-const mymap = L.map('checkinMap').setView([0, 0], 1.3);
+const mymap = L.map('checkinMap').setView([0, 0], 2);
 const attribution =
     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
 

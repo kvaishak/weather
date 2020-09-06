@@ -19,16 +19,30 @@
 <body>
     <h1>Weather here is </h1>
     <div><a href="/">Home</a> | <a href="/logs">View Checkins</a></div>
-    <p> Hello there - Your location is </p>
-    <p>
-        Latitude : <span id="lat"></span>°<br/> Longitude : <span id="long"></span>°
-    </p>
-    <p>
-        The Weather here is <span id="summary"></span> with a temperature of <span id="temperature"></span> degree. The Air quality if available is
-        <span id="airquality"></span><span id='aq_units'></span> last updated on <span id='last_updated'></span>
-    </p>
-    <button type="button" id="sendData">Checkin Here</button>
 
+    <div class="mainDataContainer">
+        <p> Hi - Your location is :</p>
+        <p id="plocat" class="rawdata">
+            Latitude : <span id="lat"></span>°<br/> Longitude : <span id="long"></span>°
+        </p>
+        <p id="pweather" class="rawdata">
+            And the Weather here is <span id="summary"></span> with a temperature of <span id="temperature"></span> degree. 
+        </p>
+        <p id="pair" class="rawdata">
+            The Air quality is <span id="airquality"></span><span id='aq_units'></span> last updated on <span id='last_updated'></span>
+        </p>
+        <div class="button" id="sendData">Checkin Here</div>
+        
+    </div>
+
+    <div>
+        <h3> About </h3>
+        <p>A simple Node application that fetches current weather and air quality information. It gathers the information through Openweathermap and Openaq.
+            Lets you checkin at the current location, where data is stored using nedb, and viewing of checking ins through Openstreetmaps and leaflet.js for rendering.
+        </p>
+    </div>
+    
+    <div id="snackbar">Successfuly Checked in.</div>
     <script src="scripts.js"></script>
 </body>
 

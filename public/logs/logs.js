@@ -24,7 +24,7 @@ async function getData() {
 
         if (item.airData && item.airData.value > 0) {
             weatherTxt += `The Air quality is
-            ${item.airData.value} ${item.airData.unit} last updated on ${item.airData.lastUpdated}`;
+            ${item.airData.value} ${item.airData.unit} last updated on ${item.airData.lastUpdated.substring(0,10)}`;
         } else {
               //no weather Data
               weatherTxt += "No Air quality Information"

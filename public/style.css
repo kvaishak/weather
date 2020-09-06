@@ -1,4 +1,45 @@
-p {
-    background-color: bisque;
-    padding: 10px;
+
+
+hr {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #d8dee9;
 }
+
+a strong {
+    color: inherit;
+}
+
+header, body {
+  margin: 0 auto;
+  max-width: 50em;
+  font-family: "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  padding: 4em 1em;
+}
+
+/* 04 Color and contrast */
+
+body {
+    color: #555;
+  }
+  
+  h1,
+  h2,
+  strong {
+    color: #333;
+  }
+  
+
+  /* 06 Primary color */
+
+a {
+    color: #e81c4f;
+  }
+  
+  /* 07 Secondary colors */
+  
+  body {
+    background: white;
+    color: #566b78;
+  }

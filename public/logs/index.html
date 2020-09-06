@@ -17,7 +17,7 @@
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
     <style>
         #checkinMap {
-            height: 240px;
+            height: 500px;
             margin: 8px 0px;
         }
     </style>
@@ -25,9 +25,10 @@
 </head>
 
 <body>
-    <h1>All Data</h1>
-    <div><a href="/">Checkins</a> | <a href="/logs">View Checkins</a></div>
+    <h1>All Checkins</h1>
+    <div><a href="/">Home</a> | <a href="/logs">View Checkins</a></div>
     <div id="checkinMap"></div>
+    <p style="text-align: center;"> Click on the checked in Markers to access the weather at that place during the time of checkin </p>
     <script src="logs.js"></script>
 </body>
 

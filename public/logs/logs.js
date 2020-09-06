@@ -1,4 +1,4 @@
-const mymap = L.map('checkinMap').setView([0, 0], 1);
+const mymap = L.map('checkinMap').setView([0, 0], 1.3);
 const attribution =
     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
 
@@ -20,7 +20,7 @@ async function getData() {
         //adding marker to the map
         const marker = L.marker([item.lat, item.long]).addTo(mymap);
 
-        let weatherTxt = `The Weather here is ${item.weather.weather[0].description} with a temperature of ${item.weather.main.temp} degree.`
+        let weatherTxt = `The Weather here is ${item.weather.weather[0].description} with a temperature of ${item.weather.main.temp} degree. `
 
         if (item.airData.value < 0) {
             //no weather Data

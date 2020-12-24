@@ -1,20 +1,21 @@
 # weather
 
-Playing around with Node.js and NPM packages for server side web application development
+A node based server side application with 'nedb' Database.
 
-## Server Side
-* Using the `express` framework
-* Database handled by `nedb`
-* `node-fetch` for making api calls from within the server
+This is a simple web application, I put together when playing around with node.js for server side API handling using the Node.js web application framework - [Express.js](https://expressjs.com/). The database is handled by **Nedb** Node package, while rendering of the Maps is done using OpenStreetMaps and [Leaflet.js](https://leafletjs.com/). It is hosted in [Heroku](https://www.heroku.com/). 
 
-## Client Side
-* `Openstreetmaps` and `leaflet.js` for rendering the map
+Accessing the link, the application will ask for Location permission. Once Location permission is granted, The application will fetch the weather and temperature using the **Openweathermap API**. Additionaly the Airquality if available will be fetched through the **OpenAQ API**. Once 'Checked IN', the current location and the weather data at the time of check-in will be sent to the server and saved in the database. View Checkin option will render All the checked in locations within a Map.
 
-## API's Used
-* Openweathermap for getting the weather data
-* Openaq for getting the airquality data
+#### Languages Used
+* Javascript
+* HTML
+* CSS
 
-### Usage
-* Clone the repository.
-* Rename the `.sample_env` file as `.env` and then add your api key for open weather map and then run using node
-```node index.js```
+#### Technologies / Frameworks Used
+* Node.js
+* Express.js
+* Nedb - Database
+* OpenweatherMap and OpenAQ for weather data
+* Leaflet.js and OpenStreetMaps for map rendering
+* Heroku for hosting
+
